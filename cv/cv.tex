@@ -1,0 +1,158 @@
+\documentclass[margin]{res}
+\usepackage{lipsum}
+\usepackage{filecontents}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{blkarray}
+\usepackage{hyperref} 
+\newcommand\myshade{85}
+\newcommand{\ts}{\textsuperscript}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{SkyBlue}
+\colorlet{myurlcolor}{Black}
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+
+\hypersetup{
+linkcolor  = mylinkcolor!\myshade!black,
+citecolor  = mycitecolor!\myshade!black,
+urlcolor   = myurlcolor!\myshade!black,
+colorlinks = true,
+}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\large\bf Alex Trostanovsky}
+% Draw a horizontal line the whole width of resume:
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+%  \moveleft.5\hoffset\centerline{240 Osgoode Street, Apt. \#4}
+%  \moveleft.5\hoffset\centerline{Ottawa, Ontario, Canada K1N 6S9}
+\moveleft.5\hoffset\centerline{
+      {\href{atrostan.github.io}{\textsf{atrostan.github.io}}}      
+      \textbullet\hspace{1mm}{\href{http://github.com/atrostan}{\textsf{github.com/atrostan}}}
+      \textbullet\hspace{1mm}{\href{https://www.linkedin.com/in/atrostan/}{\textsf{linkedin.com/in/atrostan}}
+}}
+
+\moveleft.5\hoffset\centerline{(647) 782-8344 \textbullet 
+{ \tt \href{mailto:atrostan@cs.ubc.ca}{atrostan@cs.ubc.ca}}}
+\begin{resume}
+\section{OBJECTIVE}  An eager, energetic computer scientist with a strong algorithmic foundation and special 
+interests in Data Engineering.  
+% seeking an internship opportunity with special 
+% interests in Data Science and Engineering.  
+
+
+\section{EDUCATION} 
+
+{\sl PhD-Track MSc Program}  \hfill 2020 - 2024 [anticipated]\\
+Computer Science, University of British Columbia, Vancouver, BC
+
+{\sl Bachelor of Computer Science Honours}  \hfill 2015 - 2020\\
+% \sl will be bold italic in New Century Schoolbook (or
+% any postscript font) and just slanted in
+%	Computer Modern (default) font
+School of Computer Science, Carleton University, Ottawa, ON \\
+CGPA 11.88/12.0 (A+)\\
+
+\section{TECHNICAL \\ SKILLS} {\sl Languages \& Frameworks:} Python, \CC, Pandas, Spark, Kafka, Scala
+
+\section{EXPERIENCE} 
+{\sl \href{https://www.nserc-crsng.gc.ca/Professors-Professeurs/RPP-PP/Engage-engagement_eng.asp}{NSERC-Engage}, Student Researcher} \hfill January 2020 - July 2020 \\
+In partnership with \href{https://www.kinaxis.com/en}{Kinaxis} and Carleton University's \href{https://cglab.ca/}{Computational Geometry Lab}\\
+Ottawa, ON
+\begin{itemize}  \itemsep -2pt
+      \item{Developed a graphical model of supply chain structures to facilitate the automatic detection of underutilized constraints in production processes}
+      \item{Implemented specialized vertex contraction and graph partitioning procedures based on heuristics present in graph structures to greatly reduce dataset size and complexity and improve performance of a network-separation algorithm}
+      \item{Tested runtime and correctness of community detection algorithms (\href{https://www.nature.com/articles/s41598-019-41695-z.pdf}{Leiden}, \href{https://arxiv.org/pdf/0803.0476.pdf}{Louvain}) to evaluate the feasibility of use on customer product structures}
+\end{itemize}
+{\sl Data Scientist, Co-op} \hfill January 2019 - August 2019 \\
+Ciena, Kanata, ON
+\begin{itemize}  \itemsep -2pt %reduce space between items
+\item Implemented data transformation pipelines to ingest raw
+      customer data from both streaming and batch inputs and 
+      assembled preprocessed datasets used for training Neural Networks
+      and Ensemble ML classifiers used in production
+\item Aggregated and visualized customer devices' alarm occurrence data
+      to determine the types
+      of facilities that have been shown to experience specific alarms,
+      the occurrence frequency of those alarms, and the feature distributions associated with each alarm
+\item Researched and cross-validated different multivariate time series classification and forecasting frameworks to inform and justify the use of inference models in production
+      %  \item Developed a NiFi template that demonstrated the end-to-end
+      %  flow (data acquisition, transformation, and inference making 
+      %  in the field) of a General Availability feature that was used 
+      %  in Request For Proposal demos to potential customers
+\end{itemize}
+
+{\sl Software Developer, Co-op} \hfill            May 2018 - August 2018\\
+Apption Software, Ottawa, ON 
+\begin{itemize}  \itemsep -2pt %reduce space between items
+\item Built a server to query \href{https://www.openstreetmap.org/}{OpenStreetMap} data stores
+      against Canada Post databases resulting in visualizations and statistical analyses of OSM
+      coverage of Canadian provinces
+\item Developed a Tableau workbook English – French translation tool producing fully
+      localized data visualizations and dashboards used in executive overviews of top 12
+      clients’ reports 
+\item Implemented a detection procedure using approximate string matching techniques to extract
+      unique move-in candidates from postal address and occupancy databases 
+\end{itemize}
+
+
+\section{ACHIEVEMENTS AND \\COMMUNITY \\ SERVICE }
+\begin{itemize} \itemsep -2pt
+\item{Led the 2\ts{nd} placed team in the Canadian Statistical Sciences Institute National Case Study 2019 Competition}
+\item{
+      Conducted tutorials for the Carleton Kaggle Club introducing industry-standard data-wrangling and preprocessing tools and frameworks to aspiring data scientists 
+      }
+      % \item{
+      %   Participated and administered the annual CKCU 
+      %   (Carleton University's community-based campus radio station) funding drive to help raise
+      %   money for the station's operating costs
+      % }
+      
+\end{itemize}
+
+
+\section{AWARDS AND SCHOLARSHIPS}
+
+\begin{itemize}
+      \item{2\ts{nd} Place Winner - CANSSI National Case Study Competition 2019 \begin{itemize}
+            \item{Implemented a model that, given traffic and weather patterns, predicted a probability of delay for BC Ferries sailings}
+            \item{Presented methodology, findings, and derived feature importances to members of the BC Ferries executive team to inform scheduling decision-making}
+      \end{itemize}
+      \item{Murdoch Maxwell MacOdrum Scholarship: 2016-2018}
+      \item{Deans' Honour List: 2016-2018}
+      \item{Claude Bissell Scholarship: 2017}
+      \item{Senate Medal for Outstanding Academic Achievement: 2020}
+      }
+      
+\end{itemize}
+
+\section{LANGUAGES}
+% Elected {\it House Manager}, Rho Phi Sorority \\
+% Elected {\it Sports Chairman} \\
+% Attended Krannet Leadership Conference \\
+%     Headed delegation to Rho Phi Congress \\
+%     Junior varsity basketball team \\
+%     Participant, seven intramural athletic teams 
+English -- Native \\
+Hebrew -- Fluent \\
+Russian -- Conversational            
+
+\end{resume}
+\end{document}
+
+
+
+

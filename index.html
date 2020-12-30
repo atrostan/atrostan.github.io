@@ -1,8 +1,40 @@
 ---
 layout: default
-title: my page
+title: Alex Trostanovsky
 ---
 <div class="blurb">
-	<h1>Hey, I'm Alex Trostanovsky!</h1>
-	<!-- <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p> -->
+    <div class="container">
+        <img class="container__image" src="/assets/alext.jpg" style="float: right">
+        <div class="container__text">
+            <h1>Hey, I'm Alex Trostanovsky!</h1>
+            <h2>About me</h2>
+            <p>
+                I'm a Computer Science PhD-Track MSc Student in the University of British Columbia. I'm a member of <a
+                    href="https://systopia.cs.ubc.ca/">Systopia</a> and am supervised by
+                <a href="https://www.seltzer.com/margo/">Prof. Margo Seltzer</a>. <br>
+                In my research, I work with software systems that manage graphs. The current graph processing landscape offers two approaches:
+                <ol>
+                    <li>
+                        <b>Graph databases</b> are optimized for simple queries about individual elements in the graph but are typically unable to efficiently process analytic queries on large graphs that take into account the entirety of the network.
+                    </li>
+                    <li>
+                        <b>Distributed graph processing systems</b> solve this problem, but exhibit poor single-node performance and do not persist data, thus requiring a long, slow ingest process.
+                    </li>
+                </ol>
+                <p>
+                    <em>My research goal is to bridge the gap between these two approaches by
+                        implementing data structures that enable both graph data storage and efficient analytic queries.
+                    </em>
+                </p>
+            </p>
+
+                <p>
+                    When I'm not traversing edges and vertices, I enjoy backcountry canoe trips, cycling, and Russian cinema.
+                </p>
+        </div>
+
+    </div>
+
+
+
 </div><!-- /.blurb -->

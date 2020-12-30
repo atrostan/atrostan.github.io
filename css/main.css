@@ -2,42 +2,132 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
+nav ul,
+footer ul {
+    /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
+    font-family: "Computer Modern Sans", sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+
+nav ul li,
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Computer Modern Sans", sans-serif;
+
 }
+
+h2 {
+    font-size: 2em;
+    font-family: "Computer Modern Sans", sans-serif;
+
+}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-family: "Computer Modern Sans", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.3em;
     color: #333;
 }
+
+ol li {
+    font-family: "Computer Modern Sans", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    color: #333;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
 }
+
+img {
+    border-radius: 50%;
+    border: 4px double rgb(169, 169, 169);
+}
+
+.ucod-image {
+    border-radius: .5%;
+    width: 100%;
+}
+.ncsc-image {
+    border-radius: .5%;
+    width: 100%;
+}
+
+.container {
+    padding: 10px 20px 40px;
+    max-width: 100%;
+
+    &__image {
+        width: 250px;
+        margin: 30px 30px 30px 0;
+        float: left;
+    }
+
+    &__text {
+        display: inline;
+    }
+}
+
+.summ-p {
+    display: inline;
+}
+
+summary {
+    padding: 10px;
+    width: 100%;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    background: rgb(113, 113, 113);
+    color: #fff;
+    font-size: 150%;
+}
+details {
+    padding:5x
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 45%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

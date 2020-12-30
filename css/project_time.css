@@ -1,0 +1,29 @@
+html,
+body {
+    /* background-color: #222C32; */
+    height: 100%;
+    /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
+    font-family: "Computer Modern Sans";
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Computer Modern Sans", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tbody td {
+    padding: 8px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
