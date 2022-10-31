@@ -79,6 +79,14 @@ img {
     border: 4px double rgb(169, 169, 169);
 }
 
+.cover-image {
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        max-height: 50%;
+        max-width: 50%;
+}
+
 .ucod-image {
     border-radius: .5%;
     width: 100%;

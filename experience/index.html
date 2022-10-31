@@ -6,6 +6,7 @@ title: Alex Trostanovsky
 <!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Open+Sans" rel="stylesheet" /> -->
 <!-- <script src="https://use.fontawesome.com/4d74086fc6.js"></script> -->
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+<img class="cover-image" src="/assets/bowron_1.jpg">
 
 <h2> Industry </h2>
 <section id="cd-timeline" class="cd-container">
@@ -96,9 +97,51 @@ title: Alex Trostanovsky
     </div> <!-- cd-timeline-block -->
 
 </section> <!-- cd-timeline -->
-<h2> Academic </h2>
+<h2> Academia </h2>
 
 <section id="cd-timeline" class="cd-container">
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2><a href="https://systopia.cs.ubc.ca/">Systopia</a></h2>
+            <div class="timeline-content-info">
+                <span class="timeline-content-info-title">
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    Graduate Research Assistant,
+                </span>
+                <span class="timeline-content-info-date">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    September 2020 - Current
+                </span>
+            </div>
+            <ul class="content-job-desc">
+                <b>Vertex and Edge ordering for optimizing graph processing.</b> Prior work showed that reordering the vertices <i>or</i> edges of the graph speeds up computation of workloads like PageRank and Connected Components. In my Masters research, I:
+                <li>
+                    Evaluated the combined effect of a group of vertex <i>and</i> edge ordering techniques on a dataset of large, in-memory, real-world graphs (e.g. social, hyperlink, road networks).
+                </li>
+                <li>
+                    Parallelized the <a href="https://ieeexplore.ieee.org/document/6807798">SlashBurn</a> vertex reordering algorithm using <a href="https://github.com/michaelsutton/afforest">Afforest</a>. 
+                </li>
+                <li>
+                    Proposed a novel, lock-free, multithreaded vertex-<i>and</i>-edge ordering technique that leverages the compressed SlashBurn graph isomorphism and traverses the edges of the graph using the Hilbert Space Filling Curve.
+                </li>
+                
+            </ul>
+            <span class="timeline-content-info-title">
+                <i class="fa fa-certificate" aria-hidden="true"></i>
+                Stack
+            </span>
+            <ul class="content-skills">
+                <li>C++</li>
+                <li>OpenMP</li>
+                <li>Python</li>
+            </ul>
+        </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+
     <div class="cd-timeline-block">
         <div class="cd-timeline-img cd-picture">
         </div>
@@ -108,7 +151,7 @@ title: Alex Trostanovsky
             <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
                     <i class="fa fa-certificate" aria-hidden="true"></i>
-                    NSERC-Engage Student Researcher
+                    NSERC-Engage Student Researcher,
                 </span>
                 <span class="timeline-content-info-date">
                     <i class="fa fa-calendar-o" aria-hidden="true"></i>

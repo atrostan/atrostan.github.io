@@ -12,11 +12,46 @@ title: Alex Trostanovsky
 <script src="{{ site.baseurl }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
 <div>
+<img class="cover-image" src="/assets/bowron_2.jpg">
+
   <section id="cd-timeline" class="cd-container">
     <details>
       <summary>
           <p class="summ-p"> 
-            CPSC 521 - Information Visualization Fall 2020
+            CPSC 538B - Distributed Systems Abstractions - Winter 2022
+          </p>
+      </summary>
+  
+      <img class="ucod-image" src="/assets/akka_gps_local_maxima_colouring.png" width="25%" height="25%">
+      <p>
+        For this seminar's project, we implemented a Distributed Graph Processing System (GPS) that used the "Think-Like-A-Vertex" (TLAV) Programming Model and <a href="https://doc.akka.io/docs/akka/current/general/actors.html">Akka Actors</a>. We recognized a natural correspondence between the TLAV graph processing model and the general actor model for
+distributed computation
+<!-- , such as is provided by the open-source Akka [17 ] library for Scala. We  -->
+and decided Akka would be a solid foundation on which to build a simple but robust GPS, which we believed to be a novel contribution. We achieved the following goals:
+<ul>
+  <li>Implement a graph processing system that can be deployed and run in a distributed environment with multiple machines (e.g. AWS EC2), using an actor system to coordinate and synchronize computational nodes;</li>
+  <li>Provide users with a simple, extensible API with which to “plug-in" their own graph algorithm implementations. 
+    <ul>
+      <li>See figure above for an example of the distributed Graph Colouring algorithm implemented in Akka-GPS.</li>
+    </ul>
+
+  </li>
+</ul>
+&#183; <a href="https://github.com/atrostan/akka-gps">github.com/atrostan/akka-gps </a> 
+</br> &#183; <a href="/assets/Akka_GPS_Final_Report.pdf"> Final Report</a>
+      </p>
+    </details>
+  </section> <!-- cd-timeline -->
+</div>
+<br>
+
+
+<div>
+  <section id="cd-timeline" class="cd-container">
+    <details>
+      <summary>
+          <p class="summ-p"> 
+            CPSC 521 - Information Visualization - Fall 2020
           </p>
       </summary>
   
